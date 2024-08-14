@@ -6,6 +6,7 @@ import Category from './Components/Category'
 import FeatureSectionFruits from './Components/FeatureSectionFruits'
 import FeatureSectionFastfood from './Components/FeatureSectionFastfood'
 import Banner from './Components/Banner'
+import BlogSection from './Components/BlogSection'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <FeatureSectionFruits/>
       <FeatureSectionFastfood/>
       <Banner/>
+      <BlogSection/>
     </main>
   )
 }
