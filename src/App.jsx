@@ -7,6 +7,7 @@ import FeatureSectionFruits from './Components/FeatureSectionFruits'
 import FeatureSectionFastfood from './Components/FeatureSectionFastfood'
 import Banner from './Components/Banner'
 import BlogSection from './Components/BlogSection'
+import NewsLetter from './Components/NewsLetter'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <FeatureSectionFastfood/>
       <Banner/>
       <BlogSection/>
+      <NewsLetter/>
     </main>
   )
 }
