@@ -3,7 +3,7 @@ import { BsSearch } from "react-icons/bs";
 import { LuShoppingCart, LuUser2 } from "react-icons/lu";
 import CartCountBadge from './CartCountBadge';
 
-function Navbar() {
+function Navbar({setShowCart}) {
   return (
     <div className='sticky top-0  z-10 bg-white'>
         <div className='container hidden lg:block'>
@@ -19,7 +19,7 @@ function Navbar() {
     <div className="icon_wrapper">
     <LuUser2 />
     </div>
-    <div className="icon_wrapper relative">
+    <div className="icon_wrapper relative cursor-pointer" onClick={()=>setShowCart(true)}>
     <LuShoppingCart />
     <CartCountBadge size=' w-[25px] h-[25px] '   />
     </div>

@@ -4,7 +4,7 @@ import { LuShoppingCart, LuUser2 } from "react-icons/lu";
 import { IoIosMenu } from "react-icons/io";
 import CartCountBadge from './CartCountBadge';
 
-function MobNavbar() {
+function MobNavbar({setShowCart}) {
   return (
     <div className='sticky top-0  z-10 bg-white'>
     <div className='container p-8  lg:hidden'>
@@ -18,7 +18,7 @@ function MobNavbar() {
 <div className='flex gap-4 text-[30px]'>
 
 <LuUser2 />
-<div className=" relative cursor-pointer">
+<div className=" relative cursor-pointer" onClick={()=>setShowCart(true)}>
 <LuShoppingCart />
 <CartCountBadge size=" w-[25px] h-[25px]"/>
 </div>

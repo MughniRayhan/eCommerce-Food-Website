@@ -11,15 +11,16 @@ import NewsLetter from './Components/NewsLetter'
 import Features from './Components/Features'
 import Footer from './Components/Footer'
 import { CartContextProvider } from './context/CartContext'
+import Cart from './Components/Cart'
 
 function App() {
-  const [shoeCart, setShowCart] = useState(false)
+  const [showCart, setShowCart] = useState(false)
   return (
 
     <CartContextProvider>
       <main>
-      <Navbar showCart={setShowCart}/>
-      <MobNavbar showCart={setShowCart}/>
+      <Navbar setShowCart={setShowCart}/>
+      <MobNavbar setShowCart={setShowCart}/>
       <Hero/>
       <Category/>
       <FeatureSectionFruits/>
@@ -29,6 +30,7 @@ function App() {
       <NewsLetter/>
       <Features/>
       <Footer/>
+      {showCart && <Cart showCart={showCart} setShowCart={setShowCart}/>}
     </main>
       /</CartContextProvider>
   )
