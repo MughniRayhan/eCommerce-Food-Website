@@ -1,14 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useCartContext } from '../context/CartContext'
 import { RxCross1 } from "react-icons/rx";
 import CartProduct from './CartProduct';
 
 function Cart({setShowCart}) {
-    const {products} = useCartContext();
+   let {products,setProducts} = useCartContext();
+
+    
+    
+    //remove
+    const removeProducts = (name) =>{
+        const filterProducts = products.filter((x)=> x.name !== name)
+      setProducts(filterProducts)
+      
+    }
 
   return (
     <div className='bg-[#0000007d] w-full h-screen fixed left-0 top-0 z-20 ' 
-    onClick={()=>showCart(false)}>
+    onClick={()=>setShowCart(false)}>
 
 <div className='bg-white max-w-[400px] w-full h-full absolute  right-0 top-0 p-6' 
     onClick={(e)=>e.stopPropagation()}>
@@ -28,6 +37,7 @@ onClick={()=>setShowCart(false)}
     img={el.img}
     name={el.name} 
     price={el.price}
+    onRemove = {removeProducts}
     />
     )}
   </div>
@@ -38,7 +48,7 @@ onClick={()=>setShowCart(false)}
     <button className='bg-accent text-white text-center w-full rounded-3xl py-2 hover:bg-accentDark '>
       CheckOut
     </button>
-        /</div>
+        </div>
         
     </div>
   )

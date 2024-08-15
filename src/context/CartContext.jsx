@@ -15,7 +15,7 @@ export const CartContextProvider = ({children}) => {
         setProducts((prevState)=>[...prevState, cart])
     }
 
-    return <CartContext.Provider value={{products,addToCart}}>
+    return <CartContext.Provider value={{products,setProducts,addToCart}}>
       {children}
     </CartContext.Provider>
   

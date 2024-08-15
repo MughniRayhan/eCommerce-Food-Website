@@ -1,8 +1,11 @@
 import React from 'react'
 import { RxCross1 } from "react-icons/rx";
 
-function CartProduct({img,name,price}) {
-
+function CartProduct({img,name,price,onRemove}) {
+    
+    const handleDelete=(name)=>{
+       onRemove(name);
+     }
   return (
     <div className='flex justify-between items-center'>
         <div className='flex items-center gap-4'>
@@ -15,7 +18,10 @@ function CartProduct({img,name,price}) {
             </div>
         </div>
 
-        <RxCross1 />
+        <RxCross1 className='hover:text-gray-500'
+        onClick={()=>{
+            handleDelete(name)
+        }}/>
     </div>
   )
 }
