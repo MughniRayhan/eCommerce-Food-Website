@@ -9,6 +9,7 @@ const {addToCart} = useCartContext();
 
 const addProductToCart = () =>{
 addToCart({img,name,price});
+
 }
 
 

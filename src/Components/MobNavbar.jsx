@@ -14,7 +14,7 @@ function MobNavbar({setShowCart}) {
             <BsSearch size={24}/>
             </div>
 
-          <h1 className='text-4xl font-medium'>Logo</h1>
+          <h1 className='text-4xl font-medium'>BUY<span className='text-accent'>FOOD</span></h1>
 <div className='flex gap-4 text-[30px]'>
 
 <LuUser2 />

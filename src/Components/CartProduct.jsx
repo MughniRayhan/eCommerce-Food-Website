@@ -3,6 +3,8 @@ import { RxCross1 } from "react-icons/rx";
 
 function CartProduct({img,name,price,onRemove}) {
     
+    
+
     const handleDelete=(name)=>{
        onRemove(name);
      }

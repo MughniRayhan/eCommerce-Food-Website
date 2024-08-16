@@ -3,8 +3,8 @@ import ProductCard from './ProductCard';
 
 const data = [
   {id: 0, img: "/images/product_5.png", name: "Fresh Tomato",  price: "$500"},
-  {id: 1, img: "/images/product_2.png", name: "Crunchy Crisps", price: "$300"},
-  {id: 2, img: "/images/product_3.png", name: "Jewel Cranberries", price: "$200"},
+  {id: 1, img: "/images/product_2.png", name: "Fresh Juice", price: "$300"},
+  {id: 2, img: "/images/product_3.png", name: "Fresh Kiwi", price: "$200"},
   {id: 3, img: "/images/product_4.png", name: "Almond Organic",  price: "$100"},
 ];
 
