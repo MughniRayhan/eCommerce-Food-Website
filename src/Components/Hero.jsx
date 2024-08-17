@@ -9,15 +9,15 @@ function Hero() {
                  className='w-full h-full object-cover rounded-lg'
                  src='/images/hero_1.png'alt="" />
 
-                 <div className='absolute max-w-[470px] sm:ml-16 ml-8 top-[50%] -translate-y-[50%] sm:space-y-4  '>
-                    <p className='text-2xl hidden lg:block'>100% Original Dry Fruits</p>
-                    <h2 className='text-2xl sm:text-4xl lg:text-6xl font-bold'>Dried Fruits Best Healthy</h2>
-                    <p className="text-xl  text-gray-500 pt-4 md:pt-8 ">Starting At</p>
-                    <div className="font-medium text-red-600 text-2xl sm:text-4xl pb-3">
+                 <div className='absolute max-w-[470px]  sm:ml-16 ml-8 top-[50%] -translate-y-[50%] sm:space-y-4  '>
+                    {/* <p className='text-2xl hidden lg:block'>100% Original Dry Fruits</p> */}
+                    <h2 className='text-xl sm:text-4xl lg:text-6xl font-bold'>Dried Fruits Best Healthy</h2>
+                    <p className="text-xl  text-gray-500 pt-2 md:pt-8 ">Starting At</p>
+                    <div className="font-medium text-red-600 text-2xl sm:text-4xl pb-2">
                         $18.36
                     </div>
                     <div className='bg-accentDark hover:bg-accent text-white rounded-full
-                     w-fit flex items-center gap-4 px-4 py-2 text-[14px] sm:px-6 sm:py-3 cursor-pointer'>
+                     w-fit flex items-center gap-4 px-4 py-2 text-[14px] md:px-6 md:py-3 cursor-pointer'>
                      Shop Now <BsArrowRight />
                     </div>
                  </div>
