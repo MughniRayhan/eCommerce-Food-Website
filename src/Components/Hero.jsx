@@ -6,14 +6,14 @@ function Hero() {
         <div className="grid xl:grid-cols-3 xl:grid-rows-2 gap-8">
             <div className='xl:col-span-2 xl:row-start-1 xl:row-end-[-1] relative'>
                  <img 
-                 className='w-full h-full object-cover rounded-lg'
+                 className='w-full h-[300px]  sm:h-full object-cover rounded-lg '
                  src='/images/hero_1.png'alt="" />
 
                  <div className='absolute max-w-[470px]  sm:ml-16 ml-8 top-[50%] -translate-y-[50%] sm:space-y-4  '>
-                    {/* <p className='text-2xl hidden lg:block'>100% Original Dry Fruits</p> */}
-                    <h2 className='text-xl sm:text-4xl lg:text-6xl font-bold'>Dried Fruits Best Healthy</h2>
-                    <p className="text-xl  text-gray-500 pt-2 md:pt-8 ">Starting At</p>
-                    <div className="font-medium text-red-600 text-2xl sm:text-4xl pb-2">
+                    <p className='text-2xl hidden lg:block'>100% Original Dry Fruits</p>
+                    <h2 className='text-2xl sm:text-4xl lg:text-6xl font-bold'>Dried Fruits Best Healthy</h2>
+                    <p className="text-xl  text-gray-500 pt-4 md:pt-8 ">Starting At</p>
+                    <div className="font-medium text-red-600 text-2xl sm:text-4xl pb-8">
                         $18.36
                     </div>
                     <div className='bg-accentDark hover:bg-accent text-white rounded-full
